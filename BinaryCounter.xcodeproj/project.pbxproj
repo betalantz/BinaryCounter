@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		BFE84C1F1F6B2AF6001BCE09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE84C1E1F6B2AF6001BCE09 /* AppDelegate.swift */; };
-		BFE84C211F6B2AF6001BCE09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE84C201F6B2AF6001BCE09 /* ViewController.swift */; };
+		BFE84C211F6B2AF6001BCE09 /* BinaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE84C201F6B2AF6001BCE09 /* BinaryViewController.swift */; };
 		BFE84C241F6B2AF6001BCE09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE84C221F6B2AF6001BCE09 /* Main.storyboard */; };
 		BFE84C261F6B2AF6001BCE09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE84C251F6B2AF6001BCE09 /* Assets.xcassets */; };
 		BFE84C291F6B2AF6001BCE09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE84C271F6B2AF6001BCE09 /* LaunchScreen.storyboard */; };
 		BFE84C341F6B2AF6001BCE09 /* BinaryCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE84C331F6B2AF6001BCE09 /* BinaryCounterTests.swift */; };
 		BFE84C3F1F6B2AF6001BCE09 /* BinaryCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE84C3E1F6B2AF6001BCE09 /* BinaryCounterUITests.swift */; };
+		BFE84C4D1F6B37A6001BCE09 /* CounterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE84C4C1F6B37A6001BCE09 /* CounterCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		BFE84C1B1F6B2AF6001BCE09 /* BinaryCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BinaryCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE84C1E1F6B2AF6001BCE09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BFE84C201F6B2AF6001BCE09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFE84C201F6B2AF6001BCE09 /* BinaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryViewController.swift; sourceTree = "<group>"; };
 		BFE84C231F6B2AF6001BCE09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFE84C251F6B2AF6001BCE09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFE84C281F6B2AF6001BCE09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		BFE84C3A1F6B2AF6001BCE09 /* BinaryCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinaryCounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE84C3E1F6B2AF6001BCE09 /* BinaryCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryCounterUITests.swift; sourceTree = "<group>"; };
 		BFE84C401F6B2AF6001BCE09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFE84C4C1F6B37A6001BCE09 /* CounterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +99,13 @@
 		BFE84C1D1F6B2AF6001BCE09 /* BinaryCounter */ = {
 			isa = PBXGroup;
 			children = (
-				BFE84C1E1F6B2AF6001BCE09 /* AppDelegate.swift */,
-				BFE84C201F6B2AF6001BCE09 /* ViewController.swift */,
+				BFE84C201F6B2AF6001BCE09 /* BinaryViewController.swift */,
 				BFE84C221F6B2AF6001BCE09 /* Main.storyboard */,
+				BFE84C4C1F6B37A6001BCE09 /* CounterCell.swift */,
 				BFE84C251F6B2AF6001BCE09 /* Assets.xcassets */,
 				BFE84C271F6B2AF6001BCE09 /* LaunchScreen.storyboard */,
 				BFE84C2A1F6B2AF6001BCE09 /* Info.plist */,
+				BFE84C1E1F6B2AF6001BCE09 /* AppDelegate.swift */,
 			);
 			path = BinaryCounter;
 			sourceTree = "<group>";
@@ -259,7 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFE84C211F6B2AF6001BCE09 /* ViewController.swift in Sources */,
+				BFE84C4D1F6B37A6001BCE09 /* CounterCell.swift in Sources */,
+				BFE84C211F6B2AF6001BCE09 /* BinaryViewController.swift in Sources */,
 				BFE84C1F1F6B2AF6001BCE09 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +433,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5995Q48X5V;
 				INFOPLIST_FILE = BinaryCounter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.betalantz.BinaryCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +449,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5995Q48X5V;
 				INFOPLIST_FILE = BinaryCounter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.betalantz.BinaryCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
